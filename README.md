@@ -1,7 +1,7 @@
 # Semi-Supervised Domain Adaptation via Selective Pseudo Labeling and Progressive Self-Training (ICPR 2020)
 
 ### Acknowledgement
-The implementation is built on the pytorch implementation of SSDA_MME, which is the baseline model of our proposed SSDA scheme.
+The implementation is built on the pytorch implementation of [SSDA_MME](https://github.com/VisionLearningGroup/SSDA_MME), which is the baseline model of our proposed SSDA scheme.
 
 ### Prerequisites
 + CUDA
@@ -15,29 +15,37 @@ dataset---
      |
    multi---
      |   |
-     |  Real
+     |  real
+     |  clipart
+     |  product
+     |  real
+   office_home---
+     |   |
+     |  Art
      |  Clipart
      |  Product
      |  Real
-   office_home---
-     |         |
-     |        Art
-     |        Clipart
-     |        Product
-     |        Real
    office---
-     |    |
-     |   amazon
-     |   dslr
-     |   webcam
+     |   |
+     |  amazon
+     |  dslr
+     |  webcam
 ```
 
 ### Example
-#### Train
+#### Training & Validation
 + DomainNet (clipart, painting, real, sketch)
-+ Office-home (Art, Clipart, Product, Real)
-+ Office (amazon, dslr, webcam)
+The proposed SSDA scheme consists of four stages.
+An example for running a DA scenario is given as follows.
+```
+python s1_trainval_baseline.py --net resnet34 --source real --target clipart --num 3
+python s2_eval_and_save_features.py --net resnet34 --source real --target clipart --num 3
+python s3_selective_pseudo_labeling.py --net resnet34 --source real --target clipart --num 3
+python s4_trainval_prog_self_training.py --net resnet34 --source real --target clipart --num 3
+```
 
-#### Test
-+ DomainNet (clipart, painting, real, sketch)
+Or you can run the above stages by simply executing the bash script as follows.
+```
+bash trainval_SSDA.sh
+```
 
