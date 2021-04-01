@@ -11,24 +11,24 @@ The implementation is built on the pytorch implementation of SSDA_MME, which is 
 
 ## Dataset Structure
 dataset---
-     \|\n
+     |
    multi---
-     \|   \|\n
-     \|  real
-     \|  clipart
-     \|  product
-     \|  real
-   office_home---
      |   |
-     |  Art
+     |  Real
      |  Clipart
      |  Product
      |  Real
+   office_home---
+     |         |
+     |        Art
+     |        Clipart
+     |        Product
+     |        Real
    office---
-     |   |
-     |  amazon
-     |  dslr
-     |  webcam
+     |    |
+     |   amazon
+     |   dslr
+     |   webcam
 
 ### Example
 #### Train
