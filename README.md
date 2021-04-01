@@ -11,9 +11,9 @@ The implementation is built on the pytorch implementation of SSDA_MME, which is 
 
 ## Dataset Structure
 dataset---
-     |
+     \|
    multi---
-     |   |
+     \|   \|
      |  real
      |  clipart
      |  product
