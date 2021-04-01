@@ -10,6 +10,7 @@ The implementation is built on the pytorch implementation of SSDA_MME, which is 
 + Pillow, numpy, tqdm
 
 ## Dataset Structure
+```
 dataset---
      |
    multi---
@@ -29,6 +30,7 @@ dataset---
      |   amazon
      |   dslr
      |   webcam
+```
 
 ### Example
 #### Train
