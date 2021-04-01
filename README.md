@@ -9,6 +9,27 @@ The implementation is built on the pytorch implementation of SSDA_MME, which is 
 + PyTorch 0.4.0+
 + Pillow, numpy, tqdm
 
+## Dataset Structure
+dataset---
+     |
+   multi---
+     |   |
+     |  real
+     |  clipart
+     |  product
+     |  real
+   office_home---
+     |   |
+     |  Art
+     |  Clipart
+     |  Product
+     |  Real
+   office---
+     |   |
+     |  amazon
+     |  dslr
+     |  webcam
+
 ### Example
 #### Train
 + DomainNet (clipart, painting, real, sketch)
