@@ -35,7 +35,9 @@ dataset---
 ### Example
 #### Training & Validation
 + DomainNet (clipart, painting, real, sketch)
+
 The proposed SSDA scheme consists of four stages.
+
 An example for running a DA scenario is given as follows.
 ```
 python s1_trainval_baseline.py --net resnet34 --source real --target clipart --num 3
