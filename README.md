@@ -1,4 +1,4 @@
-# Semi-Supervised Domain Adaptation via Selective Pseudo Labeling and Progressive Self-Training (ICPR 2020)
+# [Semi-Supervised Domain Adaptation via Selective Pseudo Labeling and Progressive Self-Training (ICPR 2020)](https://arxiv.org/abs/2104.00319)
 
 ### Acknowledgement
 The implementation is built on the pytorch implementation of [SSDA_MME](https://github.com/VisionLearningGroup/SSDA_MME), which is the baseline model of our proposed SSDA scheme.
