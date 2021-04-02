@@ -17,8 +17,8 @@ dataset---
      |   |
      |  real
      |  clipart
-     |  product
-     |  real
+     |  sketch
+     |  painting
    office_home---
      |   |
      |  Art
